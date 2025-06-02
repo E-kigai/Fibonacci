@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build and Run Fibonacci",
+      "type": "shell",
+      "command": "gcc",
+      "args": ["fibonacci.c", "fib_loop.c", "fib_recursive.c", "-o", "fibonacci.exe"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Compile the Fibonacci C program"
+    },
+    {
+      "label": "Run Fibonacci",
+      "type": "shell",
+      "command": ".\\fibonacci.exe",
+      "group": "none"
+    },
+    {
+      "label": "Build and Execute Fibonacci",
+      "dependsOn": ["Build and Run Fibonacci", "Run Fibonacci"],
+      "group": "build"
+    }
+  ]
+}

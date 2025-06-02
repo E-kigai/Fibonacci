@@ -1,0 +1,22 @@
+# Ignore executable files
+*.exe
+
+# Ignore object files
+*.o
+
+# Ignore debug files
+*.dSYM/
+
+# Ignore editor backup files
+*.swp
+*.bak
+*~
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# .gitignore
+.vscode/*               
+!.vscode/tasks.json     
+!.vscode/launch.json    
