@@ -17,6 +17,4 @@
 Thumbs.db
 
 # .gitignore
-.vscode/*               
-!.vscode/tasks.json     
-!.vscode/launch.json    
+.vscode/
