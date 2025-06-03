@@ -39,30 +39,3 @@ If you're using Visual Studio Code and have a `tasks.json` file set up:
 2. VS Code will automatically build the program using the configured task  
 3. Then, you can run the program manually by executing:
 
-   ```bash
-   ./fibonacci.exe
-
-### add this to the .vscode/tasks.json
-{
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Build Fibonacci",
-      "type": "shell",
-      "command": "gcc",
-      "args": [
-        "fibonacci.c",
-        "fib_loop.c",
-        "fib_recursive.c",
-        "-o",
-        "fibonacci.exe"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
-    }
-  ]
-}
-
